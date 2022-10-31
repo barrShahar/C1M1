@@ -31,7 +31,7 @@
 /* Size of the Data Set */
 #define SIZE (40)
 
-int main() {
+void main() {
 
   unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
                               114, 88,   45,  76, 123,  87,  25,  23,
@@ -50,7 +50,6 @@ int main() {
     
     print_statistics(min, max, mean, median);
 
-    return 0;
 }
 
 /* Add other Implementation File Code Here */
