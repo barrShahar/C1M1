@@ -37,10 +37,10 @@
  *  For some data this function gets a statistic input: minimum, maimum, mean and median
  *  and prints them
  *
- * @param min     : variable of type 'unsigned char'
- * @param max     : variable of type 'unsigned char'
- * @param mean    : variable of type 'unsigned char'
- * @param median  : variable of type 'unsigned char'
+ * @param min    : variable of type 'unsigned char'
+ * @param max    : variable of type 'unsigned char'
+ * @param mean   : variable of type 'unsigned char'
+ * @param median : variable of type 'unsigned char'
  */
 void print_statistics(unsigned char min, unsigned char max,
                       unsigned char mean, unsigned char median);
@@ -73,7 +73,7 @@ void print_array(unsigned char* array, unsigned int length);
 unsigned char find_median(unsigned char* array, unsigned int length);
 
 /**
- * @brief find mean of an array
+ * @brief Find mean of an array
  *
  *  This function receives a pointer to the beginning of an array of type unsigned char
  *  and sum the values of the array and divide them by the length of the array
@@ -87,7 +87,7 @@ unsigned char find_median(unsigned char* array, unsigned int length);
 unsigned char find_mean(unsigned char* array, unsigned int length);
 
 /**
- * @brief returns the array maximum value
+ * @brief Returns the array maximum value
  *
  *  Iterate on a given array and returns the maximum value
  *
@@ -99,7 +99,7 @@ unsigned char find_mean(unsigned char* array, unsigned int length);
 unsigned char find_maximum(unsigned char* array, unsigned int length);
 
 /**
- * @brief returns the array minimum value
+ * @brief Returns the array minimum value
  *
  *  Iterate on a given array and returns the maximum value
  *
@@ -111,9 +111,9 @@ unsigned char find_maximum(unsigned char* array, unsigned int length);
 unsigned char find_minimum(unsigned char* array, unsigned int length);
 
 /**
- * @brief sort an array of type 'unsigned char'
+ * @brief Sort an array of type 'unsigned char'
  *
- *  passing the input arguments to a function that implements merge sort algorithm
+ *  Passing the input arguments to a function that implements merge sort algorithm
  *
  * @param array  : pointer to the beginning of an array of type 'unsigned char'
  * @param length : variable that indicates the length of the array
@@ -129,19 +129,19 @@ void sort_array(unsigned char* array, unsigned int length);
  * them via megre functoin.
  * Sorting the array from index 'l' to index 'r'
  *
- * @param array :  a pointer to an unsorted array of type char
+ * @param array : a pointer to an unsorted array of type char
  * @param l     : starting sorting index array of type unsigned int
  * @param r     : final sorting index array of  type unsined int
  */
 
-void mergeSort(unsigned char* array,unsigned int l,unsigned int r);
+void merge_sort(unsigned char* array,unsigned int l,unsigned int r);
 
 /**
- * @brief helper function to mergeSort, merging between two sorted array
+ * @brief Merge two sub-arrays of a given array, called by function merge_sort
  *
- * merge function receive three indexes (l,q,r) and an array
- * array is sorted between indexes (l,q) and indexes (q,r)
- * the function returns a sorted array between indexes (l,r)
+ * Merge function receive three indexes (l,q,r) and an array
+ * The array is sorted between indexes (l,q) and indexes (q,r)
+ * The function returns a sorted array between indexes (l,r)
  *
  * @param array : pointer to the initial position of the array
  * @param l     : index of the first sorted array
